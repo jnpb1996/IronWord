@@ -14,20 +14,34 @@ body{
     overflow-x: hidden;
 }
 
-*::-webkit-scrollbar{
+
+/*Estilos para la Barra de scroll*/
+
+body::-webkit-scrollbar{
     width: 5px;
 }
-*::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background: maroon;
     border-radius: 10px;
 }
+
+p::-webkit-scrollbar{
+    width: 5px;
+}
+p::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 10px;
+}
+
+
+/*Estilos para el menu*/
 
 header{
     position: relative;
     display: block;
     width: 100vw;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.85);
+    height: 180px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 nav{
@@ -44,7 +58,7 @@ nav{
     color: maroon;
     font-size: 23px;
     font-family: IronMaiden;
-    left: 40px;
+    left: 25px;
     top: 15px;
     z-index: 1;
 }
@@ -57,7 +71,7 @@ h3{
 
 nav > ul{
     display: flex;
-    margin-left: 38rem;
+    margin-left: 32rem;
 }
 
 nav > ul > li > a{
@@ -104,6 +118,7 @@ nav  ul  li  ul  li  a{
     color: white;
 }
 
+
 /*Estilos para los botones de redes*/
 
 .youtube{
@@ -130,63 +145,56 @@ nav  ul  li  ul  li  a{
     top: 85px;
 }
 
+
 /*Estilos para la pagina: banda*/
-h5 span{
+
+.text p span{
     color: maroon;
-    text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.text{
-    color: rgb(72, 72, 72);
-    font-family: Somewhere;
-    font-size: 1.8rem;
+.text p{
+    padding: 0 11rem 0 14rem;
+    color: black;
+    font-family: Kode;
+    font-size: 1.2rem;
     width: 100%;
-    padding: 1.7rem 11rem 0 15rem;
     text-align: center;
     white-space: pre-wrap;
-    background: linear-gradient(to top, #fff, transparent);
+    background: rgba(255, 255, 255, 0.9);
 }
+
 
 /*Estilos para la pagina: integrantes*/
-textarea::-webkit-scrollbar{
-    width: 3px;
-}
-textarea::-webkit-scrollbar-thumb{
-    background: transparent;
-}
 
 .carousel0{
-    box-sizing: border-box;
-    display: flex;
     align-items: center;
-    height: 100vh;
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .carousel0 ul{
-    margin: 0 10rem;
+    margin: 0 12rem 4rem 14rem;
 }
 
-textarea{
-    font-family: Somewhere;
+.carousel0 p{
+    margin: 0 1px;
+    max-height: 500px;
+    overflow-y: scroll;
+    font-family: Kode;
     color: transparent;
-    font-size: 1.3rem;
-    text-align: start;
+    font-size: 1.1rem;
+    text-align: center;
     white-space: pre-wrap;
-    margin: 0 1rem 0 2rem;
-    padding: 13rem 0;
-    /*resize: none;*/
-    font-weight: bold;
-    border: transparent;
-    transition-property: color;
+    transition-property: all;
     transition-timing-function: ease-in;
 }
-textarea:hover{
+
+.carousel0 p:hover{
     background: transparent;
-    color: rgb(75, 75, 75);
-    box-shadow: none;
+    color: black;
     transition-duration: 1s;
-    padding: 0;
 }
 
 .Steve{
@@ -246,22 +254,19 @@ textarea:hover{
 }
 
 
-
 /*Estilos para la pagina estudio y vivo*/
+
 .carousel{
-    box-sizing: border-box;
     width: 100vw;
-    height: 100vh;
+    min-height: 570px;
     display: flex;
     align-items: center;
-    margin-top: -3rem;
-    z-index: -1;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .carousel ul{
     margin: 0 4rem;
-    max-height: 100vh;
-    padding: 10rem 0 10rem 0;
+    padding: 5rem 0 10rem 0;
 }
 
 .carousel ul li{
@@ -274,6 +279,7 @@ textarea:hover{
     height: 16rem;
     transition: all 800ms ease;
 }
+
 .carousel ul li img:hover{
     scale: 1.2;
 }
@@ -285,7 +291,7 @@ textarea:hover{
     border: none;
     width: 40px;
     height: 40px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
     color: maroon;
     top: calc(50% -30px);
     cursor: pointer;
@@ -320,33 +326,22 @@ button:hover{
 }
 
 .contenedor:target{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     visibility: visible;
     opacity: 1;
 }
 
 .popup{
-    font-family: Somewhere;
-    background: white;
+    background: rgba(255, 255, 255);
     position: relative;
-    width: 80rem;
-    height: 30rem;
+    width: 70rem;
+    height: 32rem;
     margin: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 2rem;
     align-items: start;
-}
-
-.popup textarea{
-    font-size: 1.2rem;
-    color: rgb(75, 75, 75);
-    width: 100%;
-    height: 100%;
-    border: transparent;
-    margin: 0;
-    padding: 0;
 }
 
 .boton_cerrado{
@@ -377,8 +372,8 @@ button:hover{
 .container_cards{
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 7rem 9rem 5rem 14rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem 9rem 5rem 14rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -388,7 +383,7 @@ button:hover{
     margin-bottom: 30px;
     width: 17rem;
     display: flex;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 1);
+    box-shadow: 0 5px 5px 1px rgba(0, 0, 0, 0.6);
     font-family: Somewhere;
     text-align: center;
 }
@@ -404,7 +399,6 @@ button:hover{
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
-
 
 .card .face{
     position: relative;
@@ -426,7 +420,7 @@ button:hover{
 
 .container_cards img{
     width: 100%;
-    padding: 50px 0 50px 0;
+    padding: 0 0 90px 0;
 }
 
 .container_cards h4{
@@ -447,10 +441,10 @@ button:hover{
 }
 
 .popup p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-family:  Kode;
     height: 100%;
-    color: rgb(75, 75, 75);
-    text-align: center;
+    text-align: justify;
     overflow: auto;
 }
 

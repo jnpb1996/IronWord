@@ -17,3 +17,8 @@
     font-family: Roboto;
     src: url(fonts/RobotoSlab-VariableFont_wght.ttf) format(truetype);
 }
+
+@font-face {
+    font-family: Kode;
+    src: url(fonts/KodeMono-Regular.ttf) format(truetype);
+}

@@ -344,6 +344,14 @@ button:hover{
     align-items: start;
 }
 
+p a{
+    color: black;
+}
+
+p a:hover{
+    color: rgb(255, 3, 3);
+}
+
 .boton_cerrado{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: large;
@@ -444,7 +452,7 @@ button:hover{
     color: black;
     font-family:  Kode;
     height: 100%;
-    text-align: justify;
+    text-align: center;
     overflow: auto;
 }
 

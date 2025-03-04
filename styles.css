@@ -8,48 +8,38 @@
 
 body{
     background-image: url(images/fondo.PNG);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
 }
 
 header{
-    position: relative;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    padding: 5px;
+    width: 100vmax;
+    height: 100dvh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
-header{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 5px;
-    z-index: -1;
+.title{
+    padding-top: 2rem;
 }
 
 nav{
     display: flex;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 2rem;
     font-family: Somewhere;
     color: white;
-}
-
-.title{
-    margin: 10px 0 0 20px;
 }
 
 h1{
     color: rgb(193, 32, 32);
     font-size: 110px;
+    margin-left: 1.2rem;
     font-family: IronMaiden;
 }
 
 span{
+    margin-top: 2rem;
     color: white;
     font-size: 30px;
     font-family: Somewhere;
@@ -101,16 +91,16 @@ nav  ul  li  ul  li  a{
 /*Estilos para los botones de redes*/
 
 .youtube{
-    position: absolute;
-    right: -220px;
-    top: -220px;
+    position: fixed;
+    right: -12rem;
+    top: -13rem;
     scale: 0.1;
 }
 
 .instagram{
-    position: absolute;
-    right: -150px;
-    top: -220px;
+    position: fixed;
+    right: -8rem;
+    top: -13rem;
     scale: 0.1;
 }
 
